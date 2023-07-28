@@ -1,4 +1,4 @@
-# ASAB WebUI Compoents
+# ASAB WebUI Components
 
 This is a simple library used for importing the ASAB WebUI components to various applications via package.json
 
