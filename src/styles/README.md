@@ -3,5 +3,5 @@
 Import the style library as
 
 ```
-@import "~asab-webui-components/dist/styles/index.css";
+@import "~asab-webui-components/src/styles/index.scss";
 ```
