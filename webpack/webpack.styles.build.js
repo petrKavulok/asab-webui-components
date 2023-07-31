@@ -10,14 +10,18 @@ module.exports = {
   entry: "./src/index.scss", // Entry point is now index.scss
   output: {
     path: path.resolve(__dirname, "../dist"),
-    filename: "styles/index.scss", // Rename the output file to styles/index.scss
+    filename: "styles/main.js", // Rename the output file to styles/index.scss
   },
   module: {
     rules: [
       {
         test: /\.(s[ac]|c)ss$/i,
         use: [
-          // MiniCssExtractPlugin.loader, // Extract CSS into separate file
+          {loader: "file-loader", // Use file-loader to output the SCSS file
+            options: {
+              name: "styles/index.scss", // Name the output file as index.scss
+            }
+          },
           {
             loader: "css-loader",
             options: { sourceMap: true },
@@ -35,19 +39,5 @@ module.exports = {
         ],
       },
     ],
-  },
-
-  // plugins: [
-  //   new CssMinimizerPlugin(),
-  //     new MiniCssExtractPlugin({
-  //        filename: "styles/index.scss", // Change the filename to "index.css"
-  //        chunkFilename: "[id].scss",
-  //     }),
-  //     // Add WriteFilePlugin to create index.scss
-  //     new WriteFilePlugin({
-  //       test: /index\.css$/, // Only create index.scss when index.css is emitted
-  //       useHashIndex: false, // Disable hash in the index.scss filename
-  //       filename: "styles/index.scss", // Output index.scss in the dist folder
-  //     }),
-  // ],
+  }
 };
