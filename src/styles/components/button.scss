@@ -150,7 +150,7 @@ $btn-dark-outline-hover-bg-color: var(--btn-dark-outline-hover-bg-color);
 //PRIMARY
 	&-primary {
 		// background-color: $btn-primary-bg-color;
-		background-color: $primary;
+		background-color: $secondary;
 		&:hover, &:active, &:focus, &:not(:disabled):not(.disabled):active, &.disabled, &:disabled {
 			background-color: $btn-primary-bg-color;
 		}
