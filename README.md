@@ -9,6 +9,17 @@ In your application, install the library with following command
 ```
 yarn add -D https://github.com/Pe5h4/asab-webui-components
 ```
+### Import the components
+
+```
+import { Humanize } from "asab-webui-components";
+```
+### Import the styles
+
+```
+@import "~asab-webui-components/src/styles/index.scss";
+```
+
 ## Dependencies
 
 - reactstrap
