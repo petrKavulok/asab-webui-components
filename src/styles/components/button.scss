@@ -1,4 +1,6 @@
 @import "../constants/index.scss";
+@import "./constants/theme-light.scss";
+@import "./constants/theme-dark.scss";
 
 :root[data-theme="light"] {
 	--btn-secondary-bg-color: var(--off-white);
